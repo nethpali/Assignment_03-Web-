@@ -2,9 +2,256 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../01_Case/CSS/normalize.css">
     <title>Case 01</title>
+    <style>
+        #box1{
+            height: 50%;
+            width: 50%;
+            background-color: red;
+            position: absolute;
+        }
+        #box2{
+            height:50%;
+            width: 50%;
+            background-color: forestgreen;
+            position: absolute;
+            right: 0px;
+        }
+        #box3{
+            height: 50%;
+            width: 50%;
+            background-color: orange;
+            position: absolute;
+            bottom: 0px;
+
+        }
+        #box4{
+            height: 50%;
+            width: 50%;
+            background-color: pink;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        #box5{
+            width:150px;
+            height: 150px;
+            background-color:white;
+            position: absolute;
+            /*left: calc(50% - 25px);
+            right: calc(50% - 25px);*/
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #box6{
+            width:100px;
+            height: 100px;
+            background-color:red;
+            position: absolute;
+            border-radius: 50px;
+            /*left: calc(50% - 25px);
+            right: calc(50% - 25px);*/
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        #circul1{
+            width:100px;
+            height: 100px;
+            background-color:white;
+            left:calc(50% - 50px);
+            bottom: calc(50% - 50px);
+            position: absolute;
+            border-radius: 50px;
+
+            /*left: calc(50% - 25px);
+            right: calc(50% - 25px);*/
+
+        }
+        #circule2{
+            width:100px;
+            height: 100px;
+            background-color:white;
+            right:calc(50% - 50px);
+            top: calc(50% - 50px);
+            position: absolute;
+            border-radius: 50px;
+
+            /*left: calc(50% - 25px);
+            right: calc(50% - 25px);*/
+        }
+        #circule3{
+            width:100px;
+            height: 100px;
+            background-color:white;
+            position: absolute;
+            border-radius: 50px;
+            left:calc(50% - 50px);
+            bottom: calc(50% - 50px);
+
+
+            /*left: calc(50% - 25px);
+            right: calc(50% - 25px);*/
+        }
+       #circule4{
+            width:100px;
+            height: 100px;
+            background-color:white;
+            position: absolute;
+            border-radius: 50px;
+            right:calc(50% - 50px);
+            bottom: calc(50% - 50px);
+        }
+     #squre1{
+         width:50px;
+         height: 50px;
+         position: absolute;
+         top: calc(50% - 25px);
+         right: calc(50% - 25px);
+         background-color: red;
+     }
+     #squre2{
+         width:50px;
+         height: 50px;
+         position: absolute;
+         background-color: red;
+         left: calc(50% - 25px);
+         bottom: calc(50% - 25px);
+     }
+     #squre3{
+         width:50px;
+         height: 50px;
+         position: absolute;
+         left: calc(50% - 25px);
+         bottom: calc(50% - 25px);
+         background-color: red;
+     }
+     #squre4{
+         width:50px;
+         height: 50px;
+         position: absolute;
+         bottom: calc(50% - 25px);
+         right: calc(50% - 25px);
+         background-color: red;
+        }
+     #corner1{
+         width:100px;
+         height: 100px;
+         position: absolute;
+         background: white;
+         border-radius: 50px;
+
+         left: calc(0% - 50px);
+         top: calc(0% - 50px);
+     }
+        #corner2{
+         width:100px;
+         height: 100px;
+         position: absolute;
+         background: white;
+         border-radius: 50px;
+
+         right: calc(0% - 50px);
+         top: calc(0% - 50px);
+     }
+        #corner3{
+         width:100px;
+         height: 100px;
+         position: absolute;
+         background: white;
+         border-radius: 50px;
+
+         left: calc(0% - 50px);
+         bottom: calc(0% - 50px);
+     }
+        #corner4{
+         width:100px;
+         height: 100px;
+         position: absolute;
+         background: white;
+         border-radius: 50px;
+
+         right: calc(0% - 50px);
+         bottom: calc(0% - 50px);
+     }
+        #box15{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color:white;
+            position: absolute;
+
+            left: calc(50% - 50px);
+            top: calc(0% - 50px);
+
+        }
+        #box16{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+
+            right: calc(50% - 50px);
+            bottom: calc(0% - 50px);
+        }
+        body{
+             overflow: hidden;
+         }
+
+
+
+    </style>
 </head>
 <body>
 
+
+<section>
+    <div id="box1">
+        <div id="circul1">
+                <div id="squre1"></div>
+        </div>
+        <div id="corner1"></div>
+    </div>
+    <div>
+    <div id="box2">
+      <div id="circule2">
+         <div id="squre2"></div>
+      </div>
+        <div id="corner2"></div>
+    </div>
+    <div id="box3">
+        <div id="circule3">
+            <div id="squre3"></div>
+        </div>
+        <div id="corner3"></div>
+    </div>
+    <div id="box4">
+        <div id="circule4">
+          <div id="squre4"></div>
+        </div>
+        <div id="corner4"></div>
+    </div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="box10"></div>
+    <div id="box11"></div>
+    <div id="box12"></div>
+    <div id="box13"></div>
+    <div id="box14"></div>
+        <div id="box15"></div>
+        <div id="box16"></div>
+</section>
 </body>
 </html>
