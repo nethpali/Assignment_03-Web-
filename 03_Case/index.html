@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_03</title>
+
+  <style>
+    #circle01 {
+       width: 200px;
+        aspect-ratio: 1/1;
+        border: 10px solid grey;
+        border-radius: 100%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top:0px;
+        position: fixed;
+        margin: auto;
+        z-index: 9999;
+    }
+    #circle02{
+        width: calc(100% - 20px);
+        aspect-ratio: 1/1;
+        border: 10px solid red;
+        border-radius: 100%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top:0px;
+        position: absolute;
+        margin: auto;
+    }
+    section{
+        width: fit-content;
+        position: absolute;
+
+        left: 0px;
+        right: 0px;
+        margin: auto;
+    }
+    section>div{
+        width: 200px;
+        aspect-ratio: 1/1;
+        background-color: orange;
+        border-radius: 100%;
+        position: relative;
+        margin: 315.4px 0px;
+    }
+    section>div:nth-child(1){
+        background: royalblue;
+    }
+    section>div:nth-child(2){
+        background: purple;
+    }
+
+    section>div:nth-child(3){
+        background: indianred;
+    }
+    section>div>span{
+        position: absolute;
+        color: white;
+        width: fit-content;
+        height: fit-content;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top:0;
+        margin: auto;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div id="circle01">
+    <div id="circle02"></div>
+</div>
+<section>
+    <div>
+        <span>
+            Hello
+        </span>
+    </div>
+    <div>
+        <span>Welcome To</span>
+    </div>
+    <div> <span>Institute of Software Engineering</span></div>
+</section>
+</body>
+</html>
